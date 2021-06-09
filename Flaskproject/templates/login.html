@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <center>
+            <h3 style="color:black;">*LOGIN PAGE*</h3>
+        </center>
+        {% if data %}
+            <h3 style="color: red;font-style: italic;">{{data}}</h3>
+        {% endif %}
+        <form action="/afterlogin" method="POST">
+            <label>Enter Account number</label>
+            <input type="text" name="acc">
+            <label>Enter Password</label>
+            <input type="password" name="pass">
+            <input type="submit" value="LOGIN" style="margin-left: 5%;">
+            <a href="/forgot" style="text-decoration: none;color:black;">forgot password ?</a>
+        </form>
+    </body>
+</html>
+<style>
+    body{
+        background-image: url("../static/Images/download\ 06.jpg");
+        background-position: center;
+        
+    }
+    form{
+        margin-top: 10%;
+        margin-left: 20%;
+        color: black;
+    }
+</style>

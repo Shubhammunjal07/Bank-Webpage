@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% if data %}
+            {% for i,j in data.items() %}
+                <label>{{i}}</label>
+                <label> : </label>
+                <label>{{j}}</label><br>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>
+<style>
+    body{
+        background-color: gray;
+    }
+    label{
+        color: blue;
+        font-size: 20px;
+    }
+</style>

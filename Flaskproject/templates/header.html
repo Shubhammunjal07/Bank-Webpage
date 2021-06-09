@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <h3>*WELCOME TO OUR BANK*</h3>
+        </center>
+        {% if msg %}
+            <h3>{{msg}}</h3>
+        {% endif %}
+        <ul>
+            <li><a href=#>HOME</a></li>
+            <li><a href='/signup'>SIGNUP</a></li>
+            <li><a href='/login'>LOGIN</a></li>
+            <li><a href=#>CONTACT</a></li>
+        </ul>
+    </body>
+</html>
+<style>
+    li{
+        display: inline;
+    }
+    ul{
+        margin-top: 5%;
+    }
+    body{
+        background-image: url("../static/Images/download\ 08.jpg");
+        background-position: center;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        padding-left: 13%;
+    }
+</style>

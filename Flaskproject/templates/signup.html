@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <h3>*SIGNUP PAGE*</h3>
+        </center>
+        <div>
+            <form action="/aftersignup" method="POST" enctype="multipart/form-data">
+                <label>Enter Name</label>
+                <input type="text" name="name"><br><br>
+                <label>Enter Passwd</label>
+                <input type="password" name="passwd" required><br><br>
+                <label>Enter Email</label>
+                <input type="email" name="email" placeholder="abc@example.com"><br><br>
+                <label>Select Date</label>
+                <input type="date" name="date"><br><br>
+                <label>Choose File</label>
+                <input type="file" name="file"><br><br>
+                <input type="submit" style="width:30%;margin-left:30%;margin-top:5%">
+                <br>
+            </form>
+        </div>
+    </body>
+</html>
+
+<style>
+    body
+    {
+        /*background-color: lightseagreen;
+        background: linear-gradient(darkgreen,lightgreen,green);*/
+        background-image: url("../static/Images/download8.jpg");
+        background-position: center;
+       
+    }
+    div{
+        margin-left: 33%;
+        margin-top: 5%;
+        border: 1px solid rgb(10, 10, 10);
+        width: 35%;
+        height: 45%;
+        padding-left: 1%;
+        padding-top: 1%;
+        border-radius: 10px;
+    }
+    input{
+        width: 60%;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+    }
+</style>

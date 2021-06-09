@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <center>
+            <h3>*Transaction Page*</h3>
+        </center>
+        {% if name %}
+            <h3 style="color:maroon;">Hello {{name}}...</h3>
+        {% endif %}
+        <ul>
+            <li><a href='#'>Debit</a></li>
+            <li><a href='#'>Credit</a></li>
+            <li><a href=#>Password</a></li>
+            <li><a href='/logout'>Logout</a></li>
+        </ul>
+    </body>
+</html>
+<style>
+    li{
+        display: inline;
+    }
+    ul{
+        margin-top: 5%;
+    }
+    body{
+        background-color: lightblue;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        padding-left: 13%;
+    }
+</style>

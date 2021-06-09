@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% if name %}
+        {% if age>=18 %}
+            <h3 style="color: blue;">{{name}} can apply for driving license</h3>
+        {% else %}
+            <h3 style="color: red;">{{name}} can not apply for driving license</h3>
+        {% endif %}
+        {% endif %}
+        {% if data %}
+            {% for i,j in data.items() %}
+                <label>{{i}}</label>
+                <label> : </label>
+                <label>{{j}}</label><br>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>
